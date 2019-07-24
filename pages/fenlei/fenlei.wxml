@@ -1,0 +1,34 @@
+<!--pages/fenlei/fenlei.wxml-->
+<view>
+<!-- 搜索框 -->
+  <view class='search'>
+    <input placeholder='搜索' type='text'></input>
+    <image src='/images/fenlei/sousuo.png' class='search-img'></image>
+  </view>
+
+  <!-- 分类 -->
+  <view class='fenlei'>
+    <!-- 左边标签 -->
+    <view class='categroy-left'>
+      <view wx:for='{{categroy}}' wx:key='index' data-id='{{item.id}}' data-index='{{index}}' class="left-item {{curNav == item.id ? 'active' : ''}}" bindtap='switchright'>{{item.name}}</view>
+    </view>
+    <!-- 右边列表 -->
+    <view class='categroy-right'>
+      <!-- 如果有数据就遍历 -->
+      <view wx:if='{{categroy[curIndex].isChild}}'>
+        <block wx:for='{{categroy[curIndex].children}}'>
+          <view class='right-items'>
+            <navigator url='../../detail/detail'>
+              <image src='{{item.image}}'></image>
+              <text>{{item.name}}</text>
+            </navigator>
+          </view>
+        </block>
+      </view>
+      <!-- 没有数据时显示无数据 -->
+      <view wx:else class='nodata'>
+        该分类暂无数据
+      </view>
+    </view>
+  </view>
+</view>

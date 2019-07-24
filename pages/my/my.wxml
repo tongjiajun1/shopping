@@ -1,0 +1,65 @@
+<!--pages/my/my.wxml-->
+<view class='conent'>
+ <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='userbutton'> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+
+
+  <view class='people2'>
+    <view class='people-one'>
+      <view class='people11'>
+        <image src='/images/my/money.png'></image>
+      </view>
+      <view>我的钱包</view>
+    </view>
+    <view class='people-two'>
+      <view class='ziti'>0</view>
+      <view class='people22'>
+        <image src='/images/my/jifen.png'></image>
+        <text>积分</text>
+      </view>
+    </view>
+    <view class='border'></view>
+     <view class='people-three'>
+      <view class='ziti'>0.00</view>
+      <view class='people22'>
+        <image src='/images/my/yue.png' style="width:40rpx;height:40rpx"></image>
+        <text>余额</text>
+      </view>
+    </view>
+  </view>
+  <view class='kongge'></view>
+  <!-- 我的订单 -->
+  <view class="people3">
+    <view class="people31">我的订单</view>
+    <view class='people32'>
+       <block wx:for='{{dingDan}}' wx:key='{{index}}'>
+        <navigator class='people3-list'>
+          <view class='people3-list1'>
+            <image src='{{item.img}}'></image>
+          </view>
+          <text>{{item.txt}}</text>
+        </navigator>
+       </block>
+    </view>
+  </view>
+  <view class='kongge'></view>
+<!-- 最后一行 -->
+<view class='people4'>
+  <block wx:for='{{lastConent}}' wx:key='{{index}}'>
+     <view class='people4-list'>
+        <image src='{{item.img}}' style='width:70rpx;height:70rpx'></image>
+        <text>{{item.txt}}</text>
+        <view>></view>
+      </view>
+  </block>  
+</view>
+
+
+
+</view>

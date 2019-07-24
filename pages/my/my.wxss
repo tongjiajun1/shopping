@@ -1,0 +1,149 @@
+/* pages/my/my.wxss */
+page {
+  font-family:"PingFangSC-Thin";
+   font-size:32rpx;
+   color: #666;   
+}
+/* 获取用户授权 */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0145a;   
+  width: 100%; 
+  height: 340rpx;
+
+}
+.userbutton{
+  margin-top: 120rpx;
+  font-size: 28rpx;
+}
+.userinfo-avatar {
+  width: 108rpx;
+  height: 108rpx;
+  margin-top: 80rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #fff;
+
+}
+
+
+
+.people1{
+  width: 100%;
+  height: 320rpx;
+  /* position: absolute;
+  top: 20rpx; */
+}
+.people1 image{
+  width: 100%;
+  height: 320rpx;
+}
+.people2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 160rpx;
+}
+.people-one,.people-two,.people-three{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.people-one{
+  width: 28%;
+  background: #fbfbfb;
+}
+.people11{
+  width: 65rpx;
+  height: 68rpx;
+}
+.people2 image{
+  width:100%;
+  height: 50rpx;
+}
+.ziti{
+  color:#f3b479;
+  font-size: 38rpx;
+  position: relative;
+  top:15rpx;
+}
+.people-two, .people-three{
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.people22{
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rpx;
+}
+.people22 image{
+  width:50rpx;
+  height: 50rpx;
+  margin-right: 14rpx;
+}
+.border{
+  width: 1px;
+  height: 100rpx;
+  background: #E2E2E2;
+  margin-top: 30rpx;
+}
+.kongge{
+  height: 26rpx;
+  width: 100%;
+  background: #EFEFF4;
+}
+.people31{
+  padding: 25rpx 0rpx 30rpx 20rpx;
+  font-size:38rpx;
+  border-bottom: 1.5px solid #666;
+}
+.people32{
+  display: flex;
+  flex-direction: row;
+}
+.people3-list{
+  width: 20%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.people3-list1{
+  margin-bottom: 10rpx;
+}
+.people3-list1 image{
+  width:75rpx;
+  height: 75rpx;
+}
+.people4{
+  margin: 0 30rpx;
+}
+.people4-list{
+  border-bottom: 1px solid #E2E2E2;
+  height: 110rpx;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.people4-list view:last-child{
+  position: absolute;
+  right:0;
+}
+.people4-list text{
+  margin-left: 25rpx;
+  font-size: 36rpx;
+  color: rgb(43, 41, 41);
+}

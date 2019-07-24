@@ -1,0 +1,184 @@
+.edit{
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+  background: #f6f6f6;
+  line-height: 80rpx;
+}
+.edit_btn{
+  position: absolute;
+  right: 30rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+
+/* 列表 */
+.list{
+  position: relative;
+  width: 100%;
+  height: 185rpx;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.dele_edit{
+  position: absolute;
+  width:40rpx;
+  height: 40rpx;
+  right: 30rpx;
+  top: 25rpx;
+}
+.radio_chek{
+  position: absolute;
+  left: 30rpx;
+  top:70rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.list_img{
+  width: 144rpx;
+  height: 144rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 100rpx;
+}
+.cart_g_name{
+  position: absolute;
+  left: 280rpx;
+  top: 75rpx;
+  font-size: 26rpx;
+  color: #aaa;
+}
+.list_name{
+  position: absolute;
+  left: 280rpx;
+  top: 20rpx;
+  overflow: hidden;
+  width: 350rpx;
+  font-size: 30rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list_price{
+  position: absolute;
+  font-size: 32rpx;
+  color: #d66058;
+  left: 280rpx;
+  bottom: 20rpx;
+}
+.carts-num{
+  position: absolute;
+  right: 30rpx;
+  bottom: 23rpx;
+  display: flex;
+  align-items: center;
+  height: 50rpx;
+  text-align: center;
+}
+.view_text_center{
+  border: 1rpx solid #ebebeb;
+  font-size: 30rpx;
+  color: #333;
+  height: 50rpx;
+  width: 76rpx;
+  display: inline-block;
+  line-height: 50rpx;
+}
+.carts-num .minus,.plus{
+  margin: 10rpx;
+  border: 1rpx solid #ebebeb;
+  color: #000;
+  width: 40rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 34rpx;
+}
+
+
+
+
+
+
+/* 底部标签 */
+.gouwu-last{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 104rpx;
+  background: #fff;
+  border-top: 2rpx solid #ebebeb;
+  line-height: 104rpx;
+}
+.total-select{
+  position: absolute;
+  left: 30rpx;
+  top: 34rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.sel_count_name{
+  position: absolute;
+  left: 80rpx;
+  color: #333;
+}
+.count_price{
+  position: absolute;
+  left:180rpx;
+  color: #aaa;
+  font-size: 28rpx;
+}
+.count_price text{
+  font-size:34rpx;
+  color: #d66058;
+}
+.bianji{
+  position: absolute;
+  right: 160rpx;
+  width: 160rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+  background: #495a8f;
+}
+.submit{
+  position: absolute;
+  right: 0;
+  width: 160rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+  background: red;
+  color: #fff;
+  font-size:36rpx;
+  text-align: center;
+}
+
+
+
+
+
+/* 没有内容时的页面 */
+.yingcang{
+  position: absolute;
+  top:120rpx;
+  left: 50%;
+  margin-left: -100rpx;
+}
+.yingcang text{
+  display: inline-block;
+  margin-top: 40rpx;
+  font-size:36rpx;
+  color:#8b8a8f;
+}
+.yingcang1{
+  height: 200rpx;
+  width: 200rpx;
+  background: #ddd;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+.yingcang1 image{
+  width: 100rpx;
+  height: 100rpx;
+}
